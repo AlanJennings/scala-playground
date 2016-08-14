@@ -4,12 +4,14 @@ echo Going to build $tutorial
 
 cd $tutorial
 
+rm *.class
+
 echo Building scala
 
-scala -classpath . $tutorial
+scalac $tutorial.scala
 
 echo Running Scala
 
-scalac $tutorial.scala
+scala -classpath . $tutorial
 
 echo finished running....   
