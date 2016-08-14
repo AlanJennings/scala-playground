@@ -6,7 +6,7 @@ cd $tutorial
 
 echo Building scala
 
-scala -classpath . Timer
+scala -classpath . $tutorial
 
 echo Running Scala
 
